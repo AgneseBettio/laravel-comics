@@ -8,5 +8,14 @@
 </head>
 <body>
     <h1>Hello World!</h1>
+    <h2>Benvenuto <strong>{{ $name }} {{$surname}}</strong></h2>
+    <p> il tuo ruolo è : {{$role}}</p>
+    ecco il tuo team:
+    <ul>
+        <li><a href="{{route('team_sandro')}}"> Sandro </a></li>
+        <li><a href="{{route('team_giorgio')}}"> Giorgio </a></li>
+        <li><a href="{{route('team_alberto')}}"> Alberto </a></li>
+
+    </ul>
 </body>
 </html>
