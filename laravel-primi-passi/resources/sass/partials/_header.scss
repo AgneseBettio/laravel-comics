@@ -1,6 +1,39 @@
 nav {
     background-color: $primary_blue;
     color: $primary_white;
-    height: 3*$spacing;
+    height: 4*$spacing;
     padding: $spacing (1.2*$spacing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2, 1.2);
+            }
+            a {
+                padding: $spacing;
+                color: $primary_white;
+                text-decoration: none;
+                font-family: $font_family;
+            }
+        }
+     
+    }
+    .logo-box{
+        height: 3*$spacing;
+        width: 3*$spacing;
+        background-color: $primary_white;
+        border-radius: 50%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }

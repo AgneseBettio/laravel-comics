@@ -1,0 +1,70 @@
+/* File generici che servono per tutto il sito */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+}
+
+.blank-space {
+  flex-grow: 1;
+}
+
+/* File specifici per varie sezioni del mio sito */
+
+nav {
+  background-color: #0282f9;
+  color: #ffff;
+  height: 60px;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+
+nav ul li a {
+  padding: 15px;
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+
+nav .logo-box {
+  height: 45px;
+  width: 45px;
+  background-color: #ffff;
+  border-radius: 50%;
+}
+
+nav .logo-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
