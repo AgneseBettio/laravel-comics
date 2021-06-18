@@ -1,5 +1,8 @@
 <header>
 
-{{-- header comune a tutte le pagine--}}
+<nav>
+CIAO
+</nav>
+
 
 </header>
