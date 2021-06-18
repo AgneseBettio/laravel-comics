@@ -1,39 +1,72 @@
 nav {
-    background-color: $primary_blue;
-    color: $primary_white;
-    height: 4*$spacing;
-    padding: $spacing (1.2*$spacing);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        li{
-            &:hover{
-                cursor: pointer;
-                transform: scale(1.2, 1.2);
+        .top-navbar {
+            background-color: $primary_blue;
+            color: $primary_white;
+            height: 2*$spacing;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    
+                    a {
+                        padding-left: $spacing;
+                        color: $primary_white;
+                        text-decoration: none;
+                        font-family: $font_family;
+                        span {
+                            margin-left: $spacing/2;
+                            display: inline-block;                           
+                        }
+                        
+                    }
+                }
+            
             }
-            a {
-                padding: $spacing;
-                color: $primary_white;
-                text-decoration: none;
-                font-family: $font_family;
-            }
+
         }
-     
-    }
-    .logo-box{
-        height: 3*$spacing;
-        width: 3*$spacing;
-        background-color: $primary_white;
-        border-radius: 50%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+        .main-navbar{
+            
+            height: 2*$spacing;
+            padding: $spacing (1.2*$spacing);
+            display: flex;
+            align-items: center;
+            .logo-box{
+                height: 3*$spacing;
+                width: 3*$spacing;
+                background-color: $primary_white;
+                border-radius: 50%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .links-box{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        
+                        a {
+                            &:hover{
+                                color: $primary_blue;
+                            }
+                            padding-left: $spacing;
+                            color: black;
+                            text-decoration: none;
+                            font-family: $font_family;
+                        }
+                    }    
+            }
         }
     }
 }
+
