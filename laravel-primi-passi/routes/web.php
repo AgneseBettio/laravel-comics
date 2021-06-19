@@ -13,9 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function() {
-    return view('home', [
-    'name' => 'Mario',
-    'surname' => 'Rossi',
-    'role' => 'capitano',
-    ]);
+    return view('home');
 })->name('home');
+
+Route::get('/current_series', function () {
+    $datiCurrentSeries = config("comics");
+
+    $datiView = [
+        "comicsList" => $datiCurrentSeries
+    ];
+
+    /* return view("products", [
+        ""current_series" => $datiCurrentSeries
+    ]); */
+    
+    return view("current_series", $datiView );
+})->name("current_series");

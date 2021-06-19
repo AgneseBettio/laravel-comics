@@ -20,7 +20,7 @@
         <div class="jumbotron">
             <img src="{{ asset('images/jumbotron.jpg') }}"  alt="" class="jumbotron-img">
         </div>
-        <div class="container">
+        <div class="section">
             @yield('main_content')
         </div>
     </main>

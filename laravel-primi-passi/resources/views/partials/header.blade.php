@@ -21,7 +21,7 @@
         </div>
         <div class="main-navbar container">
             <div class="logo-box">
-                <img src="{{ asset('images/dc-logo.png') }}" alt="La Molisana - logo" alt="DC logo">
+                <img src="{{ asset('images/dc-logo.png') }}" alt="DC-logo" alt="DC logo">
             </div>
             <div class="links-box">
                     <ul>

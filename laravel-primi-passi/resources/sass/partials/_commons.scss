@@ -11,9 +11,27 @@ body{
 .container {
     width: 1200px;
     margin: auto;
-    padding: 0 (2*$spacing);
+    padding: 0 (4*$spacing);
     display: flex;
 }
 .blank-space{
     flex-grow: 1;
+}
+.section-title{
+    
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 2*$spacing;
+    transform: translateY(-(4*$spacing));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title-label{
+        padding: ($spacing/2) (1.2*$spacing);
+        h3{
+            font-size: 1.2*$font-size;
+        }
+    }
+  
 }
