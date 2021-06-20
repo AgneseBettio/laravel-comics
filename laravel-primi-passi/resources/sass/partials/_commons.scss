@@ -7,12 +7,31 @@ body{
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                font-family: $font_family;
+            }
+            &hover{
+                cursor: pointer;
+            }
+        }
+    }
+    h3{
+        font-size: 1.2*$font-size;
+    }
 }
 .container {
     width: 1200px;
     margin: auto;
     padding: 0 (4*$spacing);
     display: flex;
+}
+.text-centered{
+    justify-content: center;
+    align-items: center;
 }
 .blank-space{
     flex-grow: 1;
@@ -29,9 +48,16 @@ body{
     align-items: center;
     .title-label{
         padding: ($spacing/2) (1.2*$spacing);
-        h3{
-            font-size: 1.2*$font-size;
-        }
-    }
-  
+    }  
+}
+.half-pg{
+    flex-basis: (100% / 2);
+}
+.col-3{
+    flex-basis: (100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+.neg-margin-bt{
+    margin-bottom: -(2*$spacing);
 }

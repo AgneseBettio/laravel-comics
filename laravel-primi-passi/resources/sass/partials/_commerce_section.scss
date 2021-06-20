@@ -1,0 +1,33 @@
+.commerce-section{
+    background-color: $primary_blue;
+    color:$primary_white;
+    margin: $spacing, 0 ;
+    padding: 2*$spacing 0;
+
+    .container{
+        justify-content: space-around;
+        align-items: center;
+        .commerce-section-box{
+            padding: 0 $spacing;
+            text-transform: uppercase;
+            display: flex;
+            flex-basis: (100% / 5);
+            height: 4*$spacing;
+            align-items: center;
+            .img-box{
+                width: 4*$spacing;
+                height: 4*$spacing;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }    
+            }
+            .commerce-service{
+                flex-grow: 1;
+                text-align: center;
+            }
+        }
+       
+    }    
+}

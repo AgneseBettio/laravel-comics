@@ -20,6 +20,13 @@
                 </div>
             </div>
         @endforeach
+    </div>
+    <div class="container text-centered">
+        <div class="btn-box blue-def neg-margin-bt">
+                <a href="#">
+                    load more
+                </a>  
+            </div>
     </div>            
 </div>
 {{--  verifico path e accesso ai dati corretti: @dump($comicsList) --}}

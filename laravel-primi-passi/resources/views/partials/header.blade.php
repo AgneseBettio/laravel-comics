@@ -1,3 +1,4 @@
+{{-- header comune a tutte le pagine--}}
 <header>
 
     <nav>    

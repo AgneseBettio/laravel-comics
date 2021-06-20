@@ -1,0 +1,27 @@
+.btn-box{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: ($spacing/2) (1.2*$spacing);
+    a{
+        font-size: 0.8*$font-size; 
+        color:$primary_white;  
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font_family;
+    }
+    &.blue-def{
+        background-color: $primary_blue;
+        border: none;
+        &hover{
+            background-color: none;
+        }
+    }
+    &.transp-def{
+        background-color: none;
+        border: 2px solid $primary_blue;
+        &hover{
+            background-color: $primary_blue;
+        }
+    }
+}

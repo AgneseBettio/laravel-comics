@@ -1,0 +1,82 @@
+.main-footer{
+    
+    color: $primary_white;
+    height: 25*$spacing;
+    width: 100vw;
+    background-image: url("/images/footer-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;     
+    .half-pg{
+        width: 100%;
+        height: 100%;
+        &.footer-img-box{
+            height: 25*$spacing;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 25*$spacing;
+                object-fit: contain;
+            }
+        }
+        .footer-links-box{
+            display: flex;
+            flex-grow: 1;
+            .col-3{
+                h3{
+                    text-transform: uppercase;
+                }
+                ul{
+                    margin-top: $line-height;
+                    li{
+                        margin-top: $line-height;
+                        a{
+                            color: $primary_gray;
+                            text-transform: capitalize;
+                            font-size: 0.8*$font-size;
+                        }
+                    }
+                }
+            }         
+        }
+        .cookies-copy{
+            margin-top: $spacing;
+            color: $primary_gray;
+            font-size: 0.8*$font-size;
+            a{
+                &.tx-blue{
+                    color: $primary_blue;
+                }
+            }
+        }
+        
+    }
+}
+.end-footer{
+    background-color: $secondary_dark_gray;
+    height: 6*$spacing;
+    display: flex;
+    justify-content: center;
+       align-items: center;
+    .socials-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5{
+            color: $primary_blue;
+            text-transform: uppercase;
+            font-size:0.8*$font-size;
+            font-weight: 600;
+        }
+        .social-img-box{
+            display: flex;
+            align-items: center;
+            margin-left: $spacing/2;
+            img{
+                margin-left: $spacing/2;
+                height: 2*$spacing;
+                width: 2*$spacing;
+            }
+        }
+    }
+}
