@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function() {
-    return view('home');
-})->name('home');
+// Route::get('/', function() {
+//     return view('home');
+// })->name('home');
 
-Route::get('/current_series', function () {
+Route::get('/', function () {
     $datiCurrentSeries = config("comics");
 
     $datiView = [
@@ -24,8 +24,22 @@ Route::get('/current_series', function () {
     ];
 
     /* return view("products", [
-        ""current_series" => $datiCurrentSeries
+        ""home" => $datiCurrentSeries
     ]); */
     
-    return view("current_series", $datiView );
-})->name("current_series");
+    return view("home", $datiView );
+})->name("home");
+
+Route::get('/single_comics/{id}', function ($index) {
+    $datiComics = config("comics");
+
+    if(!is_numeric($index) || $index < 0 || $index > count($datiComics)-1){
+        abort(404, "Fumetto inesistente");
+    }
+
+    $selectedComics = $datiComics[intval($index)];
+
+    return view("single_comics", [
+        'comics' => $selectedComics
+    ]);
+})->name("single_comics");
