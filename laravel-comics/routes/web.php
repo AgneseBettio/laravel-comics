@@ -30,7 +30,7 @@ Route::get('/', function () {
     return view("home", $datiView );
 })->name("home");
 
-Route::get('/single_comics/{id}', function ($index) {
+Route::get('/single_comics/{index}', function ($index) {
     $datiComics = config("comics");
 
     if(!is_numeric($index) || $index < 0 || $index > count($datiComics)-1){

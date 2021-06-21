@@ -1,5 +1,11 @@
 .commerce-section{
-    background-color: $primary_blue;
+    &.blue{
+        background-color: $primary_blue;
+    }
+    &.gray{
+        background-color:$primary_light_gray
+    }
+    
     color:$primary_white;
     margin: $spacing, 0 ;
     padding: 2*$spacing 0;

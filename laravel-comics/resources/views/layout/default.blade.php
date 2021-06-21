@@ -23,7 +23,7 @@
         <div class="section">
             @yield('main_content')
         </div>
-        @include('partials.commerce')
+        @yield('pre_footer')
     </main>
     @include('partials.footer')
 

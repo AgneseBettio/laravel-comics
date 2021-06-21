@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
+    a{
+        text-decoration: none;
+        font-family: $font_family;
+    }
+    &hover{
+        cursor: pointer;
+    }
     ul{
         list-style: none;
         li{
@@ -60,4 +68,34 @@ body{
 }
 .neg-margin-bt{
     margin-bottom: -(2*$spacing);
+}
+.left-marg{
+    margin-left: $spacing;
+}
+.white-tx{
+    color: $primary_white;
+}
+.blue-tx{
+    color: $primary_blue;
+}
+.dark-blue-tx{
+    color: $primary_blue_dark;
+}
+.dark-tx{
+    color: $primary_gray;
+}
+.l-green-tx{
+    color: $secondary_light_green;
+}
+.bg-gray{
+    background-color: $primary_light_gray;
+}
+.bg-blue{
+    background-color: $primary_blue;
+}
+.d-flex{
+    display: flex;
+}
+.d-inline-b{
+    display: inline-block;
 }

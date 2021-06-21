@@ -12,6 +12,15 @@ body {
   line-height: 1.5;
 }
 
+body a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+
+bodyhover {
+  cursor: pointer;
+}
+
 body ul {
   list-style: none;
 }
@@ -72,6 +81,46 @@ body h3 {
 
 .neg-margin-bt {
   margin-bottom: -30px;
+}
+
+.left-marg {
+  margin-left: 15px;
+}
+
+.white-tx {
+  color: #ffff;
+}
+
+.blue-tx {
+  color: #0282f9;
+}
+
+.dark-blue-tx {
+  color: #003F5E;
+}
+
+.dark-tx {
+  color: #7A7A7A;
+}
+
+.l-green-tx {
+  color: #BAFD91;
+}
+
+.bg-gray {
+  background-color: #F6F6F6;
+}
+
+.bg-blue {
+  background-color: #0282f9;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-b {
+  display: inline-block;
 }
 
 /* File specifici per varie sezioni del mio sito */
@@ -338,10 +387,17 @@ nav .main-navbar .searchbar-box ::-webkit-input-placeholder {
 }
 
 .commerce-section {
-  background-color: #0282f9;
   color: #ffff;
   margin: 15px, 0;
   padding: 30px 0;
+}
+
+.commerce-section.blue {
+  background-color: #0282f9;
+}
+
+.commerce-section.gray {
+  background-color: #F6F6F6;
 }
 
 .commerce-section .container {
@@ -406,5 +462,90 @@ nav .main-navbar .searchbar-box ::-webkit-input-placeholder {
 
 .btn-box.transp-defhover {
   background-color: #0282f9;
+}
+
+.prod-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-main-box span {
+  display: inline-block;
+}
+
+.prod-main-box .prod-title {
+  text-transform: uppercase;
+}
+
+.prod-main-box .prod-title h3 {
+  font-size: 24px;
+  color: #303030;
+}
+
+.prod-main-box .price-box {
+  padding: 22.5px 15px;
+  display: flex;
+  background-color: #55BA59;
+}
+
+.prod-main-box .prod-description {
+  color: #303030;
+}
+
+.adv-box {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adv-box .img-adv-box {
+  width: 100%;
+  height: 200px;
+}
+
+.adv-box .img-adv-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.adv-box h5 {
+  text-align: end;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.table-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-box .left-table {
+  width: calc(100% / 3);
+}
+
+.table-box h4 {
+  font-size: 19.2px;
+}
+
+.blue-banner {
+  height: 60px;
+  position: relative;
+}
+
+.blue-banner .img-box {
+  position: absolute;
+  height: 250px;
+  width: 180px;
+  transform: translateY(-215px);
+  border: 2px solid #ffff;
+}
+
+.blue-banner .img-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
