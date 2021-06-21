@@ -1,5 +1,5 @@
 @extends('layout.default')
-@section('page_title', 'homepage')
+@section('page_title', 'prodotti')
 @section('main_content')
 <div class="section-bg">
     <div class="container">
@@ -13,7 +13,9 @@
         @foreach($comicsList as $comic)
             <div class="card">
                 <div class="img-card-box">
-                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <a href="#">
+                        <img src="{{ $comic['thumb'] }}" alt="comic cover">
+                    </a>                    
                 </div>
                 <div class="title-card">
                     <h5>{{ $comic['title']}}</h5>
